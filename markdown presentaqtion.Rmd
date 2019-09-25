@@ -1,0 +1,62 @@
+---
+title: " DEVELOPING DATA PRODUCTS"
+author: "priya malhotra"
+date: "September 24, 2019"
+output: slidy_presentation
+---
+
+
+
+
+OVERVIEW
+========================================================
+Objective of this assignment is to create a SHINY APPLICATION.
+I have used data IRIS from R Studio to predict the width of SEPAL
+and width of PETAL using their respective lengths as predictor.
+As we change the inut length of Sepal and Petal using input sliders
+our models predict their widths which is displayed as plots as well
+as text outputs.
+
+
+
+
+DATA
+========================================================
+We are using data Iris from R Studio.
+
+
+Iris is dataframe having 150 observation and 5 variables.
+
+str(iris)
+
+'data.frame':	150 obs. of  5 variables:
+
+ $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+ 
+ $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+ 
+ $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+ 
+ $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+ 
+ $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
+
+
+INPUT and OUTPUT
+========================================================
+For Input I have used two sliders and two chechbox inputs.
+
+We can slide the inputs sepal length and petal length and also we 
+can chose to show or hide our models 1 & 2 using checkboxes.
+
+For Output we have made plot and text output for each model they use 
+reactive staements to find outputs every time we slide inut . In plots they show respective output inform of point on the line and also this application shows the prediction output for each modelin form of text.
+
+LINKS
+========================================================
+
+Link for APP can be found on
+https://priyaash.shinyapps.io/developingdataprod/
+
+Srver.R and ui.R are shared on github https://github.com/priyaash/developing-data-products
+
